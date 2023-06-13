@@ -23,8 +23,11 @@ function todosReducer(state, action) {
     case "ADD_TASK":
       return {
         ...state,
-        id: Date.now(),
-        tasks: [...state.tasks, { name: action.name, isDone: false }],
+
+        tasks: [
+          ...state.tasks,
+          { id: Date.now(), name: action.name, isDone: false },
+        ],
         numberOfUndoneTasks: state.numberOfUndoneTasks + 1,
         previousState: state,
       };
