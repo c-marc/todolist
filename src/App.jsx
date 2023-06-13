@@ -1,3 +1,4 @@
+import Header from "./components/header";
 import MyContexts from "./components/my-contexts";
 import Todos from "./components/todos";
 import Toolbar from "./components/toolbar";
@@ -5,7 +6,7 @@ import Toolbar from "./components/toolbar";
 function App() {
   return (
     <MyContexts>
-      <p>Todo App</p>
+      <Header />
       <Toolbar />
       <Todos />
     </MyContexts>

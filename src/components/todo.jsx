@@ -6,7 +6,7 @@ export function Todo({ todo }) {
     <div>
       <input
         type="checkbox"
-        checked={todo.isDonee}
+        checked={todo.isDone}
         onChange={() => dispatchTodos({ type: "TOGGLE_TASK", name: todo.name })}
       />
       <p>{todo.name}</p>

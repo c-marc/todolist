@@ -51,7 +51,7 @@ function todosReducer(state, action) {
     case "TOGGLE_SORT_TASKS":
       return {
         ...state,
-        sortTasks: !state.tasks.sortTasks,
+        sortTasks: !state.sortTasks,
         previousState: state,
       };
     case "UNDO_LAST_EVENT":
